@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang=de>
+<head>
+	<title>Ambulante Schmerztherapie postoperativ Kinder</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Analgetika-Anordnung ambulante Kinder postoperativ">
+	<meta name="keywords" content="Analgetika, Ibuprofen, Paracetamol, Metamizol">
+	<meta name="author" content="Ismail Hakki Toker">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--base href="..." target="_blank"-->
+
+	<link rel="stylesheet" href="../style/debut.css"></link>
+	
+	<script src="../js/dbAnalg.js"></script> 
+	<script src="../js/jquery.js"></script>
+	<script src="../js/codeAnalg.js"></script>
+</head>
+
+<body>
+	<h1>Ambulante Schmerztherapie postoperativ Kinder</h1>
+	<form method="post" action="">
+	<div>	
+		<fieldset class="padding-plus">
+			<legend>Patientendaten</legend>
+			<label for="fname">Vorname:</label>
+			<input type="text" id="fname" name="fname" class="round-border"><br><br>
+			<label for="lname">Nachname:</label>
+			<input type="text" id="lname" name="lname" class="round-border"><br><br>
+			<label for="weight">Gewicht:</label>
+			<input class="round-border" type="text" id="weight" name="weight" maxlength="3" size="3">&nbsp;kg
+			<br><br>
+			<label for="firstAppl">Erste Gabe:</label>
+			
+			<input type="time" id="firstAppl" name="firstAppl" maxlength="2" size="2">&nbsp;Uhr
+			<br><br>
+			<label for="birthday">Geburtstag:</label>
+			<input type="date" id="birthday" name="birthday"><br><br>
+			<button type="button" onclick="myFunction()">Press</button>
+
+		</fieldset>
+	</div>
+	</form>
+	<p id="hierHin"></p>
+
+</body>
+</html>
+
