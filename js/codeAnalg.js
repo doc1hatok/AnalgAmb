@@ -12,6 +12,6 @@ function myFunction() {
 
 
 function myFunction2() {
-window.open('index-2.html','_blank', 'location=yes,height=70,width=120,scrollbars=yes,status=yes');	
+window.open('index-2.html','_blank', 'location=yes,top=200,left=200,height=470,width=520,scrollbars=yes,status=yes');	
 
 }
