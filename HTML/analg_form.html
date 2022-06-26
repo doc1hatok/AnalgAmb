@@ -6,14 +6,14 @@
 	<meta name="description" content="Analgetika-Anordnung ambulante Kinder postoperativ">
 	<meta name="keywords" content="Analgetika, Ibuprofen, Paracetamol, Metamizol">
 	<meta name="author" content="Ismail Hakki Toker">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width-200, initial-scale=1.5">
 	<!--base href="..." target="_blank"-->
 
 	<link rel="stylesheet" href="../style/debut.css"></link>
 	
 	<script src="../js/dbAnalg.js"></script> 
-	<script src="../js/jquery.js"></script>
-	<script src="../js/codeAnalg.js"></script>
+	<script src="../js/jquery.js"></script> 
+	<script src="../js/codeAnalg.js"></script> 
 </head>
 
 <body>
@@ -23,19 +23,28 @@
 		<fieldset class="padding-plus">
 			<legend>Patientendaten</legend>
 			<label for="fname">Vorname:</label>
-			<input type="text" id="fname" name="fname" class="round-border"><br><br>
+			<input type="text" id="fname" name="fname" class="round-border">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<label for="lname">Nachname:</label>
 			<input type="text" id="lname" name="lname" class="round-border"><br><br>
+			<label for="birthday">Geburtstag:</label>
+			<input type="date" id="birthday" name="birthday">&nbsp;&nbsp;
 			<label for="weight">Gewicht:</label>
 			<input class="round-border" type="text" id="weight" name="weight" maxlength="3" size="3">&nbsp;kg
 			<br><br>
-			<label for="firstAppl">Erste Gabe:</label>
 			
-			<input type="time" id="firstAppl" name="firstAppl" maxlength="2" size="2">&nbsp;Uhr
 			<br><br>
-			<label for="birthday">Geburtstag:</label>
-			<input type="date" id="birthday" name="birthday"><br><br>
-			<button type="button" onclick="myFunction()">Press</button>
+			
+		  	<label for="analgetics">Analgetikum auswählen:</label>
+		  	<select name="analgetics" id="analgetics" single>				
+			    <option value="ibu saft">Ibuprofen Saft</option>
+			    <option value="ibu tbl">Ibuprofen 400 mg Tbl.</option>
+			    <option value="pct oral">Paracetamol Saft</option>
+			    <option value="pct supp">Paracetamol Supp</option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-
+			</select>
+			<label for="firstAppl">Erste Gabe:</label>
+			<input type="time" id="firstAppl" name="firstAppl" maxlength="2" size="2">&nbsp;Uhr			<br><br>
+<!--		    <input type="submit" value="Submit">			-->
+			<button type="button" onclick="ausgabeBox()">Press</button>
 
 		</fieldset>
 	</div>
